@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tradecraft Brewing — Coming Soon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#241509; --cream:#f1e4c3; --copper:#c8803a; --muted:#b9a98a;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1107}}
+:root[data-theme="dark"]{--bg:#1d1107}
+html{scroll-padding-top:env(safe-area-inset-top,0px);height:100%}
+*,*:before,*:after{box-sizing:inherit}
+body{
+  margin:0; min-height:100%; display:flex; align-items:center; justify-content:center; text-align:center;
+  padding:2rem 1.25rem; background-color:var(--bg); color:var(--cream);
+  background-image:radial-gradient(ellipse at 50% 40%,rgba(200,128,58,.14),transparent 65%);
+  font-family:"Libre Franklin",system-ui,sans-serif;
+}
+main{max-width:640px}
+.logo{
+  margin:0; font-family:"Alfa Slab One","Rockwell",Georgia,serif; font-weight:400;
+  font-size:clamp(2.6rem,11vw,5.5rem); line-height:.95;
+}
+.tag{margin:1.5rem 0 0;font-size:clamp(1.15rem,3.5vw,1.5rem);color:var(--copper);font-weight:600}
+.rule{width:64px;height:2px;background:var(--copper);border:0;margin:2rem auto}
+.body{margin:0;font-size:1.15rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+  <h1 class="logo">Tradecraft Brewing</h1>
+  <p class="tag">Belgian beer, American made</p>
+  <hr class="rule">
+  <p class="body">Brewery in planning</p>
+</main>
+</body>
+</html>
